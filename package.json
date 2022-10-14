@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "post:dev": "postcss ./src/*.css -o ./dist/index.css",
+    "post:watch": "postcss ./src/*.css -o ./dist/index.css --watch",
+    "post:build": "NODE_ENV=production postcss ./src/*.css -o ./dist/index.css",
+    "watch": "npx tailwindcss -i ./src/*.css -o ./dist/index.css --watch",
+    "build": "npx tailwindcss -i ./src/*.css -o ./dist/index.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.7",
+    "autoprefixer": "^10.4.12",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
